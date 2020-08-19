@@ -111,6 +111,9 @@ For the v6 version, I went even further and compared the performance of new prot
 
 ## Updates
 
+### Version 1 (July 16, 2016)
+First release.
+
 ### Version 2 (July 27, 2016)
 If you printed the first version, you will definitely want to upgrade to this one: the first version directed its air way too much downwards and performed even worse than the stock duct (which also doesn't really produce any appreciable airflow at the height of the nozzle). This new duct should allow to print overhangs that previously ended in disaster, with *both* nozzles. Moreover, it requires less material, making it lighter than the first one.
 
