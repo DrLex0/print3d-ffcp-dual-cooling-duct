@@ -22,11 +22,9 @@ If you're only going to print with a single extruder, check out [the single-extr
 
 ### Pre-printing: check nozzle height
 
-There are two models to choose from. To determine which one you need, do the following test.
+There are two models to choose from. To determine which one you need, do the following test. *Move the bed against the nozzles (as if you are going to use the levelling sheet), then bring the carriage forward and measure the distance between the bed surface and the cradle as shown in the photo.*
 
 ![Alignment](thumbs/ductalign.jpg)[🔎](images/ductalign.jpg)
-
-*Move the bed against the nozzles (as if you are going to use the levelling sheet), then bring the carriage forward and measure the distance between the bed surface and the cradle as shown in the photo.*
 
 The regular duct model is designed to be optimal if this distance is **10 mm,** which is normally the case on a standard FFCP. It should also be this way if you aligned the nozzles with [this leveler](https://www.thingiverse.com/thing:1582720).
 
