@@ -17,7 +17,7 @@ The stock duct has an obvious problem: it only cools the left nozzle. This means
 
 After reports that the v4 and v5 versions of this duct did not perform as well as the stock duct (for single extrusion with the left nozzle obviously), I made some more improvements and did some extensive tests that confirmed the new v6 outperforms the stock duct on a particular challenging model. It is possible that the stock duct will still provide better results in specific situations, but those should be rare.
 
-If you're only going to print with a single extruder, check out [the single-extruder variation of this duct](https://www.thingiverse.com/thing:2436915), it provides even better cooling.
+If you're only going to print with a single extruder, check out [the single-extruder variation of this duct](https://github.com/DrLex0/print3D-ffcp-left-cooling-duct), it provides even better cooling.
  
 
 ### Pre-printing: check nozzle height
@@ -47,7 +47,7 @@ I printed this in Slic3r with 0.2 mm layers, 100% infill, *no* supports and no 
 
 Do not rush this print. To get a strong result, print *slowly* and only provide the minimum amount of cooling necessary. If you can control fan speed (which is **not** the case on an unmodified FFCP), you can enable it all the time on an ABS print at about 10% to 20%. Otherwise, only enable the fan while overhangs are being printed. You should get an OK result without fan altogether.
 
-Printing in a translucent material has the advantage that it will pass through some of the light from the LED strip, but it is advisable anyhow to add [an extra LED](https://www.thingiverse.com/thing:1790072) to get a better view on what is being printed.
+Printing in a translucent material has the advantage that it will pass through some of the light from the LED strip, but it is advisable anyhow to add [an extra LED](https://github.com/DrLex0/print3d-ffcp-x-led-mount) to get a better view on what is being printed.
  
 
 ### Post-printing
@@ -75,14 +75,14 @@ If you want to retrofit the blower fan and this duct on an older printer that do
 
 ### Using
 
-Just as with the stock duct, a limitation is that it only blows in one direction, meaning that parts in the ‘shadow’ of the nozzle (i.e. at the back) will get the least cooling. If possible, orient the model such that overhangs or whatever parts should look best, are at the front. Again, if you will only be printing with one extruder, the [single-extrusion variation](https://www.thingiverse.com/thing:2436915) of this duct reduces the shadow problem.
+Just as with the stock duct, a limitation is that it only blows in one direction, meaning that parts in the ‘shadow’ of the nozzle (i.e. at the back) will get the least cooling. If possible, orient the model such that overhangs or whatever parts should look best, are at the front. Again, if you will only be printing with one extruder, the [single-extrusion variation of this duct](https://github.com/DrLex0/print3D-ffcp-left-cooling-duct) reduces the shadow problem.
 
 If you're going to do a long print where the fan is not needed, you should remove the duct altogether. This is especially the case with filaments like polycarbonate that need to be printed at very high temperatures. When no air is flowing through the duct, the long exposure to the heat of the extruders is very likely to cause the exhausts to deform, even if printed in ABS and even if you applied extra insulation.
 
 You can enable the fan on ABS prints to improve quality, but this will greatly increase the risk of warping and cracking. Enabling the fan continuously with ABS is only feasible in the following cases:
 * for small objects printed with thin layers. Be sure to increase your print temperature if you do, and seal the enclosure to keep the air inside cozy and warm. A raft can also help to prevent warping.
 * for large objects when using the smart cooling features of your slicer software to only enable the fan during short periods while printing overhangs.
-* if you can drastically reduce the speed of the fan. Don't bother trying to vary the speed in your slicer program, the fan circuit in the FFCP is on/off only. The simplest way to obtain variable fan speed is by installing a hardware [PWM controller](https://www.thingiverse.com/thing:2095862). There are also some custom Sailfish firmware builds that have a software PWM implementation, but it is limited. A more complicated but also fully automatic solution is [this one](https://www.thingiverse.com/thing:2852499), where fan speed is delegated to a separate controller steered by commands in the print code itself.
+* if you can drastically reduce the speed of the fan. Don't bother trying to vary the speed in your slicer program, the fan circuit in the FFCP is on/off only. The simplest way to obtain variable fan speed is by installing a hardware [PWM controller](https://www.thingiverse.com/thing:2095862). There are also some custom Sailfish firmware builds that have a software PWM implementation, but it is limited. A more complicated but also fully automatic solution is [this one](https://github.com/DrLex0/MightyVariableFan), where fan speed is delegated to a separate controller steered by commands in the print code itself.
 
 Similar remarks hold for PETG: it is very sensitive to cooling but you will obtain nicer prints when applying just a tiny bit of cooling, which is only possible by controlling fan speed.
  
@@ -140,7 +140,7 @@ Dec 19: added the ‘x1’ variation, which has the exhausts 1 mm lower than th
 Even fewer changes, there is absolutely no need to re-print this if you already have v6r. The only change, besides leaving the sinking ship of Thingiverse, is that I removed the tiny bit that was still a copy of natewin's model, and made it again from scratch. (I found it a bit ridiculous to have to label this as a remix just because of that tiny shared part.)
 
 ### Future plans
-When I find the time, I will run this duct through the same kind of CFD simulations as I have done with the [single-extruder variation](https://www.thingiverse.com/thing:2436915), to ensure the flows are as optimal as possible within the limitations of this design.
+When I find the time, I will run this duct through the same kind of CFD simulations as I have done with the [single-extruder variation](https://github.com/DrLex0/print3D-ffcp-left-cooling-duct), to ensure the flows are as optimal as possible within the limitations of this design.
 
 
 ## Tags
